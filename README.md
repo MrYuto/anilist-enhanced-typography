@@ -17,7 +17,7 @@ Enhance your AniList reading experience with improved font sizes and styles.
    - [Tampermonkey](https://www.tampermonkey.net/)
    - [Violentmonkey](https://violentmonkey.github.io/get-it/)
    - [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)
-2. Install the User Script from [here](./dist/anilist-enhanced-typography.user.js?raw=1).
+2. Install the user script from [here](./dist/anilist-enhanced-typography.user.js?raw=1).
 
 ### Method 2: Manual Installation
 
