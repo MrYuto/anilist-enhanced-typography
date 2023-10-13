@@ -1,0 +1,8 @@
+@use '../abstracts' as *;
+
+.home {
+  .section-header,
+  .section-header h2 {
+    @include text-style('-base-normal');
+  }
+}

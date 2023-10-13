@@ -1,0 +1,8 @@
+@use '../abstracts' as *;
+
+.media-preview-card {
+  .title {
+    @include text-style('-sm-medium');
+    text-wrap: balance;
+  }
+}

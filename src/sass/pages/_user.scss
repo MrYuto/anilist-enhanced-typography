@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+.user-page-unscoped {
+  .header-wrap .name {
+    @include text-style('-4xl-bold');
+  }
+
+  .section .section-header {
+    @include text-style('-base-normal');
+  }
+}

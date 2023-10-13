@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.thread-card {
+  .title {
+    @include text-style('-sm-medium');
+    text-wrap: balance;
+  }
+
+  .name span[data-v-550f7194] {
+    @include text-style('-xs-medium') {
+      --default-xs-letter-spacing: 0.02em
+    };
+  }
+}

@@ -1,0 +1,7 @@
+@use '../abstracts' as *;
+
+.review {
+  .title {
+    @include text-style('-4xl-semibold')
+  }
+}

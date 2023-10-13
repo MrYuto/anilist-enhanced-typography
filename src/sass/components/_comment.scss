@@ -1,0 +1,7 @@
+@use '../abstracts' as *;
+
+.comment {
+  .user {
+    @include text-style('-sm-medium');
+  }
+}

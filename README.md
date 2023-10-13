@@ -4,14 +4,14 @@ Enhance your AniList reading experience with improved font sizes and styles.
 
 ## Screenshots
 
-![](./screenshots/screenshot_03.png)
 ![](./screenshots/screenshot_01.png)
 ![](./screenshots/screenshot_02.png)
+![](./screenshots/screenshot_03.png)
 ![](./screenshots/screenshot_04.png)
 
 ## Installation
 
-### Method 1: Using a Userscript Engine (Recommended)
+### Method 1: Using a Userscript Engine
 
 1. Install a Userscript Engine:
    - [Tampermonkey](https://www.tampermonkey.net/)
@@ -21,7 +21,7 @@ Enhance your AniList reading experience with improved font sizes and styles.
 
 ### Method 2: Manual Installation
 
-If you prefer not to use a userscript engine, you can manually apply the [`style.css`](./src/style.css) to your browser.
+If you prefer not to use a userscript engine, you can manually apply the [`style.css`](./dist/style.css) to your browser.
 
 ## Contribution
 

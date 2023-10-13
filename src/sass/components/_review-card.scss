@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+
+.review-card {
+  .header {
+    @include text-style('-sm-medium');
+    text-wrap: balance;
+  }
+
+  .summary {
+    @include text-style('-sm-normal');
+    text-wrap: balance;
+  }
+}

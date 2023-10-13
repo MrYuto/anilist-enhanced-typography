@@ -1,0 +1,18 @@
+@use '../abstracts' as *;
+
+#nav {
+  .link {
+    @include text-style('-sm-normal') {
+      --default-sm-letter-spacing: 0.02em;
+    }
+  }
+
+  .dropdown {
+    @include text-style('-sm-normal');
+
+    .label,
+    .primary-link-text {
+      @include text-style('-sm-semibold');
+    }
+  }
+}

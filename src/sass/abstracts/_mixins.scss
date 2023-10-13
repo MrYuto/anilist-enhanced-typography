@@ -1,0 +1,80 @@
+@use 'sass:map';
+@use 'sass:list';
+@use 'sass:meta';
+@use './variables' as *;
+@use './functions' as *;
+
+@mixin text-weight($weight: null, $name: 'default') {
+  @if $weight == null {
+    $args: str-split($name, '-');
+
+    @if list.length($args) != 2 {
+      @error 'Type error';
+    }
+
+    $name: list.nth($args, 1);
+    $weight: list.nth($args, 2);
+  }
+
+  $font-weight: map.get($text-styles, $name, 'weights', $weight);
+
+  @content;
+
+  font-weight: var-or(#{$name}-#{$weight}-weight, $font-weight);
+}
+
+@mixin text-size($size: null, $name: 'default') {
+  @if $size == null {
+    $args: str-split($name, '-');
+
+    @if list.length($args) != 2 {
+      @error 'Type error';
+    }
+
+    $name: list.nth($args, 1);
+    $size: list.nth($args, 2);
+  }
+
+  $font-size: map.get($text-styles, $name, 'sizes', $size);
+  $line-height: map.get($text-styles, $name, 'line-heights', $size);
+  $letter-spacing: map.get($text-styles, $name, 'letter-spacings', $size);
+
+  @content;
+
+  font-size: var-or(#{$name}-#{$size}-size, $font-size);
+  line-height: var-or(#{$name}-#{$size}-line-height, $line-height);
+  letter-spacing: var-or(#{$name}-#{$size}-letter-spacing, $letter-spacing);
+}
+
+@mixin text-font($name: 'default') {
+  $font-family: map.get($text-styles, $name, 'font-family');
+
+  @content;
+
+  font-family: var-or(#{$name}-font-family, $font-family);
+}
+
+@mixin text-style($name: 'default', $size: null, $weight: null) {
+  @if $size == null {
+    $args: str-split($name, '-');
+
+    @if list.length($args) != 3 {
+      @error 'Type error';
+    }
+
+    $name: list.nth($args, 1);
+    $size: list.nth($args, 2);
+    $weight: list.nth($args, 3);
+
+    $name: if($name != '', $name, 'default');
+  }
+
+  @content;
+
+  @if $weight != null {
+    @include text-weight($weight, $name);
+  }
+
+  @include text-size($size, $name);
+  @include text-font($name);
+}

@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.forum-thread {
+  h1 {
+    @include text-style('-xl-semibold');
+    text-wrap: balance;
+  }
+
+  .body {
+    .user {
+      @include text-style('-base-medium');
+    }
+  }
+}

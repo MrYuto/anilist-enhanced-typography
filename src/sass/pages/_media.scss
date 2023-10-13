@@ -1,0 +1,41 @@
+@use '../abstracts' as *;
+
+.media {
+  h1 {
+    @include text-style('-2xl-semibold');
+    text-wrap: balance;
+  }
+
+  h2 {
+    @include text-style('-base-normal');
+  }
+
+  .description {
+    @include text-style('-base-normal');
+    text-wrap: balance;
+  }
+
+  .rank-text {
+    @include text-style('-xs-semibold');
+  }
+
+  .data {
+    .type {
+      @include text-style('-xs-semibold') {
+        --default-xs-line-height: 1;
+      }
+
+      text-transform: uppercase;
+    }
+
+    .value {
+      @include text-style('-sm-normal');
+    }
+  }
+
+  .external-links {
+    .name {
+      @include text-style('-sm-medium');
+    }
+  }
+}

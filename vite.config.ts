@@ -8,7 +8,7 @@ export default defineConfig({
       entry: 'src/main.ts',
       userscript: {
         name: 'Anilist Enhanced Typography',
-        version: '1.0.0',
+        version: '1.1.0',
         description:
           'Enhance your AniList reading experience with improved font sizes and styles.',
         license: 'MIT',

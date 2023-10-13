@@ -1,0 +1,7 @@
+@use '../abstracts/' as *;
+
+.role-card {
+  .name {
+    @include text-style('-xs-medium');
+  }
+}

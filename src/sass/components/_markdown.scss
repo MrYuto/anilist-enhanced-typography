@@ -1,0 +1,57 @@
+@use '../abstracts' as *;
+
+.markdown {
+  scrollbar-gutter: stable both-edges;
+
+  .content-wrap:has(&) {
+    scrollbar-gutter: stable both-edges;
+  }
+
+  h1 {
+    @include text-style('-4xl-bold');
+
+    .activity-feed .reply-markdown & {
+      @include text-style('-3xl-bold');
+    }
+  }
+
+  h2 {
+    @include text-style('-3xl-bold');
+
+    .activity-feed .reply-markdown & {
+      @include text-style('-2xl-bold');
+    }
+  }
+
+  h3 {
+    @include text-style('-2xl-bold');
+
+    .activity-feed .reply-markdown & {
+      @include text-style('-xl-bold');
+    }
+  }
+
+  h4 {
+    @include text-style('-xl-bold');
+
+    .activity-feed .reply-markdown & {
+      @include text-style('-lg-bold');
+    }
+  }
+
+  h5 {
+    @include text-style('-lg-bold');
+
+    .activity-feed .reply-markdown & {
+      @include text-style('-base-bold');
+    }
+  }
+
+  p {
+    @include text-style('-base-normal');
+
+    .activity-feed .reply-markdown & {
+      @include text-style('-sm-normal');
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@use '../abstracts' as *;
+
+.activity-entry {
+  .name {
+    @include text-style('-sm-medium');
+  }
+
+  .donator-badge {
+    @include text-style('-xs-bold');
+  }
+
+  .time {
+    @include text-style('-xs-normal');
+  }
+
+  .status {
+    @include text-style('-sm-normal');
+
+    .title {
+      @include text-style('-sm-medium');
+    }
+  }
+
+  .count {
+    @include text-style('-xs-bold');
+  }
+}
