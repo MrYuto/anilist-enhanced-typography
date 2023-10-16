@@ -15,8 +15,19 @@
     text-wrap: balance;
   }
 
+  .nav {
+    .link {
+      @include text-style('-sm-medium') {
+        --default-sm-line-height: 1;
+        --default-sm-letter-spacing: 0.2px;
+      }
+
+      text-transform: uppercase;
+    }
+  }
+
   .rank-text {
-    @include text-style('-xs-semibold');
+    @include text-style('-xs-medium');
   }
 
   .data {
