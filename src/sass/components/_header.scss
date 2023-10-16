@@ -2,8 +2,8 @@
 
 #nav {
   .link {
-    @include text-style('-sm-normal') {
-      --default-sm-letter-spacing: 0.02em;
+    @include text-style('-sm-medium') {
+      --default-sm-letter-spacing: 0.2px;
     }
   }
 
