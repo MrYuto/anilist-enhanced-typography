@@ -9,10 +9,10 @@
   }
 
   .name {
-    @include text-style('-sm-normal');
+    @include text-style('-xs-normal');
 
     span[data-v-550f7194] {
-      @include text-style('-sm-medium');
+      @include text-style('-xs-semibold');
     }
   }
 
