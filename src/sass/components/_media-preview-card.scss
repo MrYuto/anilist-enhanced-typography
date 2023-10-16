@@ -2,7 +2,10 @@
 
 .media-preview-card {
   .title {
-    @include text-style('-sm-medium');
+    @include text-style('-sm-semibold') {
+      --default-sm-line-height: 1.2;
+    }
+
     text-wrap: balance;
   }
 }
