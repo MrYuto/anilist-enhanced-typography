@@ -1,8 +1,47 @@
 @use '../abstracts' as *;
 
 .user-page-unscoped {
-  .header-wrap .name {
-    @include text-style('-4xl-bold');
+  .header-wrap {
+    .name {
+      @include text-style('-4xl-medium');
+    }
+
+    .link {
+      @include text-style('-sm-medium') {
+        --default-sm-line-height: 1;
+        --default-sm-letter-spacing: 0.2px;
+      }
+
+      text-transform: uppercase;
+    }
+
+    .nav-btn {
+      @include text-style('-sm-bold') {
+        --default-sm-line-height: 1;
+        --default-sm-letter-spacing: 0.2px;
+      }
+    }
+  }
+
+  .stat {
+    .value {
+      @include text-style('-xl-bold') {
+        --default-base-line-height: 1;
+      }
+    }
+
+    .label {
+      @include text-style('-xs-medium') {
+        --default-xs-line-height: 1;
+        --default-xs-letter-spacing: 0.2px;
+      }
+
+      text-transform: uppercase;
+    }
+  }
+
+  .milestone {
+    @include text-style('-xs-normal');
   }
 
   .section .section-header {
