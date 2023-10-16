@@ -1,14 +1,22 @@
 @use '../abstracts' as *;
 
 .thread-card {
-  .title {
-    @include text-style('-sm-medium');
-    text-wrap: balance;
+  .title[data-v-550f7194],
+  &.small .title[data-v-550f7194] {
+    @include text-style('-sm-semibold') {
+      --default-sm-line-height: 1.25;
+    }
   }
 
-  .name span[data-v-550f7194] {
-    @include text-style('-xs-medium') {
-      --default-xs-letter-spacing: 0.02em
-    };
+  .name {
+    @include text-style('-sm-normal');
+
+    span[data-v-550f7194] {
+      @include text-style('-sm-medium');
+    }
+  }
+
+  .category {
+    @include text-style('-xs-medium');
   }
 }
