@@ -2,12 +2,18 @@
 
 .review-card {
   .header {
-    @include text-style('-sm-medium');
+    @include text-style('-sm-semibold') {
+      --default-sm-line-height: 1.3;
+    }
+
     text-wrap: balance;
   }
 
   .summary {
-    @include text-style('-sm-normal');
+    @include text-style('-sm-normal') {
+      --default-sm-line-height: 1.3;
+    }
+
     text-wrap: balance;
   }
 }
