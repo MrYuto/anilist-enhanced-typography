@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+.footer {
+  .theme-selector h2 {
+    @include text-style('-base-bold');
+  }
+
+  .links a {
+    @include text-style('-sm-normal')
+  }
+}
