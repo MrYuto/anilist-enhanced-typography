@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 
 .forum-thread {
-  h1 {
+  .title {
     @include text-style('-xl-semibold');
     text-wrap: balance;
   }
