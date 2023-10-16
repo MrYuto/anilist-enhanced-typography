@@ -1,0 +1,8 @@
+@use '../abstracts' as *;
+
+.recommendation-card {
+  .title {
+    @include text-style('-xs-semibold');
+    text-wrap: balance;
+  }
+}
