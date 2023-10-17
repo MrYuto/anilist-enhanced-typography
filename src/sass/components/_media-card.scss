@@ -1,0 +1,111 @@
+@use '../abstracts' as *;
+
+.media-card {
+  .title {
+    @include text-style('-sm-semibold');
+  }
+
+  .description {
+    @include text-style('-sm-normal');
+  }
+
+  .date {
+    @include text-style('-base-semibold');
+    text-wrap: balance;
+
+    &.airing .episode {
+      @include text-style('-xs-medium');
+    }
+
+    &.airing .countdown {
+      @include text-style('-base-semibold');
+    }
+  }
+
+  .score {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    .percentage {
+      @include text-style('-base-semibold');
+    }
+  }
+
+  .studios {
+    @include text-style('-sm-medium');
+  }
+
+  .studio {
+    @include text-style('-xs-medium');
+  }
+
+  .info {
+    @include text-style('-xs-medium') {
+      --default-xs-line-height: 1;
+      --default-xs-letter-spacing: 0.02px;
+    }
+
+    text-transform: uppercase;
+  }
+
+  .typings {
+    @include text-style('-xs-medium') {
+      --default-xs-line-height: 1;
+      --default-xs-letter-spacing: 0.02px;
+    }
+  }
+
+  .genres {
+    gap: 8px;
+  }
+
+  .genre {
+    @include text-style('-xs-medium') {
+      --default-xs-line-height: 1;
+      --default-xs-letter-spacing: 0.02px;
+    }
+
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .scroll-wrap {
+    overflow: hidden;
+  }
+
+  &,
+  &.has-rank {
+
+    .title-link {
+      @include text-style('-base-semibold');
+      margin-bottom: 16px;
+    }
+
+    .ellipsis {
+      overflow: visible;
+    }
+
+    .rank,
+    .hash[data-v-70df6e62] {
+      @include text-style('-2xl-bold');
+    }
+
+    .score {
+      align-items: flex-start;
+    }
+
+    .row,
+    .score .percentage {
+      @include text-style('-sm-medium') {
+        --default-sm-line-height: 1;
+      }
+    }
+
+    .sub-row {
+      @include text-style('-xs-medium');
+      margin-top: 8px;
+    }
+  }
+}
