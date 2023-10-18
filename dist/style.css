@@ -64,6 +64,13 @@ body {
 .content-wrap:has(.markdown) {
   scrollbar-gutter: stable both-edges;
 }
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5 {
+  text-wrap: balance;
+}
 .markdown h1 {
   font-weight: var(--default-bold-weight, 700);
   font-size: var(--default-4xl-size, 32px);
