@@ -2,13 +2,6 @@
 
 Enhance your AniList reading experience with improved font sizes and styles.
 
-## Screenshots
-
-![](./screenshots/screenshot_01.png)
-![](./screenshots/screenshot_02.png)
-![](./screenshots/screenshot_03.png)
-![](./screenshots/screenshot_04.png)
-
 ## Installation
 
 ### Method 1: Using a Userscript Engine
@@ -22,6 +15,13 @@ Enhance your AniList reading experience with improved font sizes and styles.
 ### Method 2: Manual Installation
 
 If you prefer not to use a userscript engine, you can manually apply the [`style.css`](./dist/style.css) to your browser.
+
+## Screenshots
+
+![](./screenshots/screenshot_01.png)
+![](./screenshots/screenshot_02.png)
+![](./screenshots/screenshot_03.png)
+![](./screenshots/screenshot_04.png)
 
 ## Contribution
 
