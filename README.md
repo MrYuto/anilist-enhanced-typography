@@ -19,6 +19,7 @@ If you prefer not to use a userscript engine, you can manually apply the [`style
 ## Screenshots
 
 ![](./screenshots/screenshot_01.png)
+![](./screenshots/screenshot_05.png)
 ![](./screenshots/screenshot_02.png)
 ![](./screenshots/screenshot_03.png)
 ![](./screenshots/screenshot_04.png)
