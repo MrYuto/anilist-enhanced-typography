@@ -32,7 +32,7 @@
 
   .data {
     .type {
-      @include text-style('-xs-semibold') {
+      @include text-style('-xs-medium') {
         --default-xs-line-height: 1;
       }
 

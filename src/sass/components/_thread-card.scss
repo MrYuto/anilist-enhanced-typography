@@ -3,7 +3,7 @@
 .thread-card {
   .title[data-v-550f7194],
   &.small .title[data-v-550f7194] {
-    @include text-style('-sm-semibold') {
+    @include text-style('-sm-medium') {
       --default-sm-line-height: 1.25;
     }
   }
@@ -12,7 +12,7 @@
     @include text-style('-xs-normal');
 
     span[data-v-550f7194] {
-      @include text-style('-xs-semibold');
+      @include text-style('-xs-medium');
     }
   }
 

@@ -2,7 +2,7 @@
 
 .review-card {
   .header {
-    @include text-style('-sm-semibold') {
+    @include text-style('-sm-medium') {
       --default-sm-line-height: 1.3;
     }
 
